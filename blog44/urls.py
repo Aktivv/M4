@@ -22,4 +22,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('text/', text_view),
     path('', main_page_view),
+    path('posts/', post_list_view),
+    path('posts/<int:post_id>/', post_detail_view),
 ]
+
+
+
